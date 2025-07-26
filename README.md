@@ -5,7 +5,7 @@ This project is a self-contained virtual Security Operations Center (SOC) built 
 ## 🔧 Tools & Technologies
 
 - **Kali Linux**: Used for penetration testing and generating attacks (e.g., Hydra).
-- **Windows Server 2019**: Configured with **Active Directory** and **Event Logging**.
+- **Windows Server 2022**: Configured with **Active Directory** and **Event Logging**.
 - **pfSense**: Used as the firewall for network segmentation and monitoring.
 - **SIEM System**: For centralized log collection, correlation, and alerting.
 - **rsyslog** (Linux) and **nxlog** (Windows): Log forwarding to SIEM.
