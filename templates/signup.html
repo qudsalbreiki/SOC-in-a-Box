@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <form method="POST">
+        <h2>Signup</h2>
+        Username: <input type="text" name="username" required><br>
+        Password: 
+        <input type="password" name="password" required
+               pattern="(?=.*[^a-zA-Z0-9]).{8,}"
+               title="Password must be at least 8 characters long and contain at least one special character."><br>
+        <input type="submit" value="Signup">
+        <p>Already have an account? <a href="/login">Login here</a></p>
+    </form>
+</body>
+</html>

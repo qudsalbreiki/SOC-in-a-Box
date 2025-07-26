@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Submit Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <form method="POST">
+        <h2>Welcome, {{ session['username'] }}</h2>
+        Enter some data: <input type="text" name="data" required><br>
+        <input type="submit" value="Submit">
+        <p><a href="/logout">Logout</a></p>
+    </form>
+</body>
+</html>
